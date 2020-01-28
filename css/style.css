@@ -1,0 +1,80 @@
+/* Card design */
+.card {
+  width: 320px;
+  height: 420px;
+  padding: 0 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  cursor: pointer;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+  perspective: 600px;
+}
+/* Image style */
+.card .card__image {
+  background-size: cover !important;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .25s;
+     -moz-transition: all .25s;
+      -ms-transition: all .25s;
+       -o-transition: all .25s;
+          transition: all .25s;
+}
+.card:hover .card__image {
+  -webkit-transform: rotateX(15deg);
+  -ms-transform: rotateX(15deg);
+  -o-transform: rotateX(15deg);
+  transform: rotateX(15deg);
+}
+
+/* Ranbdom */
+.card.random .card__image {
+  -webkit-clip-path: polygon(3% 8%, 100% 0%, 94% 90%, 7% 100%);
+  -o-clip-path: polygon(3% 8%, 100% 0%, 94% 90%, 7% 100%);
+  clip-path: polygon(3% 8%, 100% 0%, 94% 90%, 7% 100%);
+  stroke: yellow;
+  stroke-width: 8px;
+}
+.card.random:hover .card__image {
+  -webkit-clip-path: polygon(16% 9%, 100% 0%, 99% 99%, 9% 90%);
+  -o-clip-path: polygon(16% 9%, 100% 0%, 99% 99%, 9% 90%);
+  clip-path: polygon(16% 9%, 100% 0%, 99% 99%, 9% 90%);
+}
+
+/* Trapezoid */
+.card.trapezoid .card__image {
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  -o-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+}
+.card.trapezoid:hover .card__image {
+  -webkit-clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+   -o-clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+   clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+}
+
+/* Trapezoid */
+.card.pentagon .card__image {
+  -webkit-clip-path: polygon(50% 0%, 100% 20%, 89% 100%, 10% 100%, 0 20%);
+   -o-clip-path: polygon(50% 0%, 100% 20%, 89% 100%, 10% 100%, 0 20%);
+   clip-path: polygon(50% 0%, 100% 20%, 89% 100%, 10% 100%, 0 20%); 
+}
+.card.pentagon:hover .card__image {
+  -webkit-clip-path: polygon(50% 0%, 95% 20%, 100% 100%, 0 100%, 5% 20%);
+  -o-clip-path: polygon(50% 0%, 95% 20%, 100% 100%, 0 100%, 5% 20%);
+  clip-path: polygon(50% 0%, 95% 20%, 100% 100%, 0 100%, 5% 20%);
+}
+
+/* Parallelogram */
+.card.parallelogram .card__image {
+  -webkit-clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+  -o-clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.card.parallelogram:hover .card__image {
+  -webkit-clip-path: polygon(0 0, 90% 4%, 100% 96%, 10% 100%);
+  -o-clip-path: polygon(0 0, 90% 4%, 100% 96%, 10% 100%);
+  clip-path: polygon(0 0, 90% 4%, 100% 96%, 10% 100%);
+}

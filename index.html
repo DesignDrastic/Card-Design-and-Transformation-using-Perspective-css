@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cards</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/default.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="text-center">
+      <h1 class="title">Card Design & Transformation using Perspective CSS</h1>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <!-- Random -->
+        <div class="card random">
+          <div class="card__image" dd-bg="images/antler.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <!-- Trapezoid -->
+        <div class="card trapezoid">
+          <div class="card__image" dd-bg="images/dog.jpg"></div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div><br />
+    <div class="row">
+      <div class="col-2">
+        <!-- Pentagon -->
+        <div class="card pentagon">
+          <div class="card__image" dd-bg="images/cat.jpg"></div>
+        </div>
+      </div>
+      <div class="col-2">
+        <!-- Parallelogram -->
+        <div class="card parallelogram">
+          <div class="card__image" dd-bg="images/redparrot.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+    // Set card background using javascript
+    $('[dd-bg]').each(function() {
+      $(this).css('background', 'url('+$(this).attr('dd-bg')+')');
+    });
+  </script>
+
+</body>
+</html>

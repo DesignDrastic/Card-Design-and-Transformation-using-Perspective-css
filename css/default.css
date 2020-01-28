@@ -1,0 +1,28 @@
+body {
+  background: #1c1c20;
+}
+.container {
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.col-2 {
+  width: 50%;
+  margin: 0 auto;
+  float: left;
+  display: inline-block;
+}
+.col-3 {
+  position: relative;
+  width: 33.33%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  float: left;
+  display: inline-block;
+}
+.title {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-weight: 800;
+  color: #a08aae;
+}
